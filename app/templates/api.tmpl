@@ -1,0 +1,37 @@
+{{define "title"}}Register Client API{{end}}
+{{define "content"}}
+
+
+<form action="/dashboard/register" method="post">
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset mdl-textfield mdl-js-textfield">
+     <input class="mdl-textfield__input" type="text" name="tw_id" id="tw_id">
+     <label class="mdl-textfield__label" for="tw_id">Twitter Client Id...</label>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset mdl-textfield mdl-js-textfield">
+     <input class="mdl-textfield__input" type="text" name="tw_secret" id="tw_secret">
+     <label class="mdl-textfield__label" for="tw_secret">Twitter Client Secret...</label>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset mdl-textfield mdl-js-textfield">
+     <input class="mdl-textfield__input" type="text" name="db_id" id="db_id">
+     <label class="mdl-textfield__label" for="db_id">Dropbox Client Key...</label>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset mdl-textfield mdl-js-textfield">
+     <input class="mdl-textfield__input" type="text" name="db_secret" id="db_secret">
+     <label class="mdl-textfield__label" for="db_secret">Dropbox Client Secret...</label>
+  </div>
+
+
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset">
+     <button id="save" class="mdl-button mdl-js-button mdl-button--raised"> Save </button>
+  </div>
+
+</form>
+
+
+
+{{end}}
+
